@@ -1,0 +1,2 @@
+server nam e alada ekta folder khulte hbe.
+*npm init likhle package.json chole asbe.
