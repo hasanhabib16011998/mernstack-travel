@@ -1,0 +1,31 @@
+how to pull the changes from github:
+To fetch or pull the changes made by your teammate in the same repository, you can use the git fetch and git pull commands. Here's how you can do it:
+
+Fetch Changes:
+
+First, you should fetch the changes from the remote repository to see what your teammate has added without merging them into your working branch. Use the following command to fetch the changes:
+
+bash
+Copy code
+git fetch
+This command retrieves the latest changes from the remote repository without making any changes to your local branch.
+
+Review the Changes:
+
+To see what changes have been made by your teammate, you can use the following command:
+
+bash
+Copy code
+git log --oneline --decorate --all --graph
+This will display a summary of the commit history and branches, allowing you to review the changes made by your teammate.
+
+Merge the Changes:
+
+If you are satisfied with the changes and want to merge them into your local branch, you can use the git pull command. The git pull command is a combination of git fetch and git merge. It fetches the changes and merges them into your current branch. For example, to merge changes from the master branch of the remote repository into your current branch:
+
+bash
+Copy code
+git pull origin master
+Replace origin with the remote name and master with the branch name your teammate has pushed their changes to.
+
+After following these steps, you will have fetched and potentially merged the changes made by your teammate into your local branch.
